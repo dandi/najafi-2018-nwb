@@ -1,0 +1,15 @@
+Bag-Software-Agent: BDBag version: 1.4.1 (Bagit version: 1.6.4) <https://github.com/fair-research/bdbag>
+BagIt-Profile-Identifier: https://raw.githubusercontent.com/fair-research/bdbag/master/profiles/bdbag-profile.json
+Bagging-Date: 2018-07-23
+Bagging-Time: 17:23:18 EDT
+Contact-Email: fnajafi@cshl.edu
+Contact-Name: Farzaneh Najafi
+Contact-Orcid: 0000-0001-6454-2448
+Contact-Phone: +1 516.367.5096
+External-Description: Datasets from Najafi, Farzaneh and Elsayed, Gamaleldin F and Pnevmatikakis, Eftychios and Cunningham, John P and Churchland, Anne K (2018) Inhibitory and excitatory populations in parietal cortex are equally selective for decision outcome in both novices and experts
+External-Identifier: http://dx.doi.org/10.14224/1.36980
+Internal-Description: Each folder in "FN_dataSharing" belongs to a mouse discussed in the paper.  Inside each "mouse" folder, there are folders for each session of experiment (imaging during decision making).  Inside each "session" folder, two .mat files exist: 1) post_* file includes variables such as the activity of each neuron aligned on the choice (firstSideTryAl), trial outcomes (outcomes), stimulus rates (stimrate), animal's response side (allResp_HR_LR), etc.  2) more_* file includes variables such as which neurons are inhibitory (inhibitRois_pix), and what neurons have poor quality, hence excluded from analyses (badROIs01), etc.
+Internal-Identifier: http://repository.cshl.edu/id/eprint/36980
+Organization-Address: One Bungtown Road, Cold Spring Harbor, NY 11724
+Payload-Oxum: 71684775666.272
+Source-Organization: Cold Spring Harbor Laboratory

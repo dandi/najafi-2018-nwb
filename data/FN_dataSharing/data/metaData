@@ -1,0 +1,16 @@
+Description of data in the paper:
+"Inhibitory and excitatory populations in parietal cortex are equally selective for decision outcome in both novices and experts"
+Farzaneh Najafi, Gamaleldin F Elsayed, Eftychios Pnevmatikakis, John P Cunningham, Anne K Churchland 
+
+
+Each folder in "FN_dataSharing" belongs to a mouse discussed in the paper.
+
+Inside each "mouse" folder, there are folders for each session of experiment (imaging during decision making).
+
+Inside each "session" folder, two .mat files exist:
+
+1) "post_*" file includes variables such as the activity of each neuron aligned on the choice ("firstSideTryAl"), trial outcomes ("outcomes"), stimulus rates ("stimrate"), animal's response side ("allResp_HR_LR"), etc. 
+
+2) "more_*" file includes variables such as which neurons are inhibitory ("inhibitRois_pix"), and what neurons have poor quality, hence excluded from analyses ("badROIs01"), etc.
+
+  
