@@ -10,12 +10,12 @@ neurodocker generate singularity \
 	--base=neurodebian:buster \
 	--pkg-manager=apt \
 	--ndfreeze date=20190724 \
-	--install vim wget strace time ncdu gnupg curl procps datalad pigz \
+	--install vim wget strace time ncdu gnupg curl procps pigz \
 	virtualenv \
 	python-pytest dcmtk python-pip python-wheel python-setuptools \
     --user neuro \
     --miniconda \
-      conda_install="python=3.7 pynwb jupyter jupyterlab jupyter_contrib_nbextensions matplotlib seaborn" \
+      conda_install="python=3.7 pynwb datalad jupyter jupyterlab jupyter_contrib_nbextensions matplotlib seaborn" \
       pip_install="duecredit" \
       create_env="nwb" \
       activate=true \
