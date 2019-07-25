@@ -1,2 +1,6 @@
 [datalad "dataset"]
 	id = a0f8dc24-ad72-11e9-8c86-002590f97d84
+[datalad "containers.dandi-pynwb"]
+	updateurl = shub://dandi/najafi-2018-nwb
+	image = environments/dandi-pynwb.simg
+	cmdexec = singularity exec {img} {cmd}
