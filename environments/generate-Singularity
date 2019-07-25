@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -eu
+
+version=0.1
+
+# Followed https://github.com/kaczmarj/neurodocker/blob/master/examples/conda_python/generate.sh 
+# for conda bits.  Not sure yet if creating neuro user required and will be of benefit
+neurodocker generate singularity \
+	--base=neurodebian:buster \
+	--pkg-manager=apt \
+	--ndfreeze date=20190724 \
+	--install vim wget strace time ncdu gnupg curl procps datalad pigz \
+	virtualenv \
+	python-pytest dcmtk python-pip python-wheel python-setuptools \
+    --user neuro \
+    --miniconda \
+      conda_install="python=3.7 pynwb jupyter jupyterlab jupyter_contrib_nbextensions matplotlib seaborn" \
+      pip_install="duecredit" \
+      create_env="nwb" \
+      activate=true \
+    --run 'mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py' \
+    --workdir /home/neuro \
+	>| Singularity
