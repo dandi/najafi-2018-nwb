@@ -3,4 +3,4 @@
 [datalad "containers.dandi-pynwb"]
 	updateurl = shub://dandi/najafi-2018-nwb
 	image = environments/dandi-pynwb.simg
-	cmdexec = singularity exec --bind {img_dspath} {img} {cmd}
+	cmdexec = singularity exec --bind "$PWD" {img} {cmd}
