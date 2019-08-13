@@ -15,8 +15,8 @@ neurodocker generate singularity \
 	python-pytest dcmtk python-pip python-wheel python-setuptools \
     --user neuro \
     --miniconda \
-      conda_install="python=3.7 pynwb datalad jupyter jupyterlab jupyter_contrib_nbextensions matplotlib seaborn" \
-      pip_install="duecredit" \
+      conda_install="python=3.7 pynwb datalad jupyter jupyterlab jupyter_contrib_nbextensions matplotlib seaborn tqdm" \
+      pip_install="duecredit python-dateutil" \
       create_env="nwb" \
       activate=true \
     --run 'mkdir -p ~/.jupyter && echo c.NotebookApp.ip = \"0.0.0.0\" > ~/.jupyter/jupyter_notebook_config.py' \
