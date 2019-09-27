@@ -1,2 +1,2 @@
-c04eb54b-4b4e-5755-8436-866b043170fa autoenable=false encryption=none externaltype=datalad-archives name=datalad-archives type=external uuid=c04eb54b-4b4e-5755-8436-866b043170fa timestamp=1563908986.034991595s
 c04eb54b-4b4e-5755-8436-866b043170fa autoenable=true encryption=none externaltype=datalad-archives name=datalad-archives type=external uuid=c04eb54b-4b4e-5755-8436-866b043170fa timestamp=1563908986.034991595s
+e513795e-1311-431d-8106-917d9528cfbd autoenable=true location=http://datasets.datalad.org/labs/churchland/najafi-2018-nwb/.git name=datasets.datalad.org type=git timestamp=1569616136.524309387s
